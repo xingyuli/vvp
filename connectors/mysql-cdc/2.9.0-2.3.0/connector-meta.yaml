@@ -1,0 +1,120 @@
+---
+connector:
+  type: mysql-cdc
+  packaged: true
+  source: true
+  sink: false
+  lookup: false
+  properties:
+  - defaultValue: '0.05'
+    description: ''
+    key: chunk-key.even-distribution.factor.lower-bound
+    required: false
+  - defaultValue: '1000.0'
+    description: ''
+    key: chunk-key.even-distribution.factor.upper-bound
+    required: false
+  - defaultValue: '1000'
+    description: ''
+    key: chunk-meta.group.size
+    required: false
+  - defaultValue: '3'
+    description: ''
+    key: connect.max-retries
+    required: false
+  - defaultValue: 30 s
+    description: ''
+    key: connect.timeout
+    required: false
+  - defaultValue: '20'
+    description: ''
+    key: connection.pool.size
+    required: false
+  - defaultValue: mysql-cdc
+    description: Must be set to 'mysql-cdc' to configure this connector.
+    key: connector
+    required: true
+  - defaultValue: ''
+    description: ''
+    key: database-name
+    required: true
+  - defaultValue: 30 s
+    description: ''
+    key: heartbeat.interval
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: hostname
+    required: true
+  - defaultValue: ''
+    description: ''
+    key: password
+    required: true
+  - defaultValue: '3306'
+    description: ''
+    key: port
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.incremental.snapshot.chunk.key-column
+    required: false
+  - defaultValue: '8096'
+    description: ''
+    key: scan.incremental.snapshot.chunk.size
+    required: false
+  - defaultValue: 'True'
+    description: ''
+    key: scan.incremental.snapshot.enabled
+    required: false
+  - defaultValue: 'False'
+    description: ''
+    key: scan.newly-added-table.enabled
+    required: false
+  - defaultValue: '1024'
+    description: ''
+    key: scan.snapshot.fetch.size
+    required: false
+  - defaultValue: initial
+    description: ''
+    key: scan.startup.mode
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.specific-offset.file
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.specific-offset.gtid-set
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.specific-offset.pos
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.specific-offset.skip-events
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.specific-offset.skip-rows
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: scan.startup.timestamp-millis
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: server-id
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: server-time-zone
+    required: false
+  - defaultValue: ''
+    description: ''
+    key: table-name
+    required: true
+  - defaultValue: ''
+    description: ''
+    key: username
+    required: true
